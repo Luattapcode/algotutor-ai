@@ -16,7 +16,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://algotutor-ai-1.onrender.com";
 
 const FEATURED_PROBLEMS = [
   { slug: "two-sum", name: "1. Two Sum (Easy)" },
